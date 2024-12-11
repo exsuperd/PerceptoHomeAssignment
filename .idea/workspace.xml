@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="302f9d62-0018-4b26-9da7-b80393394bcf" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;exsuperd&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/exsuperd/GE.git&quot;,
+    &quot;accountId&quot;: &quot;a2a81951-ebdb-4437-a068-ccd23408dbfe&quot;
+  }
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="customMavenHome" value="C:\Automation\Related files\apache-maven-3.9.8" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="showPreview" value="true" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2JXWl42nWqbvlKPwLpFdlCT7gmO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Notification.DisplayName-DoNotAsk-Vcs Important Messages": "VCS important messages",
+    "Notification.DoNotAsk-Vcs Important Messages": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.C:/Automation/GeneralElectricExtended/webSuite.xml.executor": "Run",
+    "TestNG.PublicAPIs.executor": "Run",
+    "TestNG.StudentClassPostPutPatchDeleteNoInfra.post.executor": "Run",
+    "TestNG.Tests.executor": "Run",
+    "TestNG.Tests.test_01_loginUsingRandomUser.executor": "Run",
+    "TestNG.Tests.test_02_searchItemAndVerifyResults.executor": "Run",
+    "TestNG.Tests.test_03_verifyPricesNotSorted.executor": "Run",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "E:/AutomationPojects/GeneralElectric/src/main/java/workFlows/APIFlows",
+    "last_opened_file_path": "C:/Automation/Projects/TomaGradeAutomation",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Automation\Projects\perceptoHomeAssignment" />
+      <recent name="E:\AutomationPojects\GeneralElectric" />
+      <recent name="E:\AutomationPojects\GeneralElectric\src\main\java" />
+    </key>
+    <key name="MoveInnerDialog.RECENTS_KEY">
+      <recent name="webTesting" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="apiTesting" />
+      <recent name="workFlows.APIFlows" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Compile" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="StudentClassPostPutPatchDeleteNoInfra.post" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="perceptoHomeAssignment" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apiTesting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="apiTesting" />
+      <option name="MAIN_CLASS_NAME" value="apiTesting.StudentClassPostPutPatchDeleteNoInfra" />
+      <option name="METHOD_NAME" value="post" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="apiTesting" type="TestNG">
+      <module name="perceptoHomeAssignment" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apiTesting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/apiSuite.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="E:\AutomationPojects\GeneralElectric" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="perceptoSanityTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="perceptoHomeAssignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webTesting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webTesting" />
+      <option name="MAIN_CLASS_NAME" value="webTesting.perceptoSanityTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="perceptoSanityTests.test_01_loginUsingRandomUser" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="perceptoHomeAssignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webTesting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webTesting" />
+      <option name="MAIN_CLASS_NAME" value="webTesting.perceptoSanityTests" />
+      <option name="METHOD_NAME" value="test_01_loginUsingRandomUser" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="perceptoSanityTests.test_02_searchItemAndVerifyResults" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="perceptoHomeAssignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webTesting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webTesting" />
+      <option name="MAIN_CLASS_NAME" value="webTesting.perceptoSanityTests" />
+      <option name="METHOD_NAME" value="test_02_searchItemAndVerifyResults" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="perceptoSanityTests.test_03_verifyPricesNotSorted" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="perceptoHomeAssignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webTesting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webTesting" />
+      <option name="MAIN_CLASS_NAME" value="webTesting.perceptoSanityTests" />
+      <option name="METHOD_NAME" value="test_03_verifyPricesNotSorted" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="perceptoWebTesting" type="TestNG">
+      <module name="perceptoHomeAssignment" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/webSuite.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="E:\AutomationPojects\GeneralElectric" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Maven.Compile" />
+      <item itemvalue="TestNG.apiTesting" />
+      <item itemvalue="TestNG.perceptoWebTesting" />
+      <item itemvalue="TestNG.perceptoSanityTests" />
+      <item itemvalue="TestNG.perceptoSanityTests.test_01_loginUsingRandomUser" />
+      <item itemvalue="TestNG.perceptoSanityTests.test_02_searchItemAndVerifyResults" />
+      <item itemvalue="TestNG.perceptoSanityTests.test_03_verifyPricesNotSorted" />
+      <item itemvalue="TestNG.StudentClassPostPutPatchDeleteNoInfra.post" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.perceptoSanityTests" />
+        <item itemvalue="TestNG.perceptoSanityTests.test_03_verifyPricesNotSorted" />
+        <item itemvalue="TestNG.perceptoSanityTests.test_02_searchItemAndVerifyResults" />
+        <item itemvalue="TestNG.perceptoSanityTests.test_01_loginUsingRandomUser" />
+        <item itemvalue="TestNG.StudentClassPostPutPatchDeleteNoInfra.post" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="302f9d62-0018-4b26-9da7-b80393394bcf" name="Changes" comment="" />
+      <created>1672225057878</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1672225057878</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/GeneralElectricExtended$E__AutomationPojects_GeneralElectricExtended_webSuite_xml.ic" NAME="$PROJECT_DIR$/webSuite.xml Coverage Results" MODIFIED="1673984914653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

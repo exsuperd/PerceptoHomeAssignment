@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<environment>
+    <!-- Web -->
+    <baseURL>https://www.terminalx.com/women</baseURL>
+    <pageLoadTimeout>20000</pageLoadTimeout>
+    <generalTimeout>10000</generalTimeout>
+</environment>

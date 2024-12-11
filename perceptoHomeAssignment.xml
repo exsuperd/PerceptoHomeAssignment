@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name ="Suite" parallel="false">
+    <test name ="WEBTesting">
+        <classes>
+            <class name="webTesting.perceptoSanityTests"> </class>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="utilities.listeners"/>
+    </listeners>
+</suite>
