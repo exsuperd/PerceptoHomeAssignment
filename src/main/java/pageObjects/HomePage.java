@@ -8,7 +8,7 @@ import java.util.List;
 
 public class HomePage {
 
-    @FindBy(how = How.XPATH, using = "//button[contains(@class,'profile-button')]")
+    @FindBy(how = How.CSS, using = "button[data-test-id='qa-header-login-button']")
     public WebElement homePageConnectButton;
    @FindBy(how = How.CSS, using = "button[data-test-id='qa-header-search-button']")
     public WebElement homePageSearchButton;
@@ -16,5 +16,6 @@ public class HomePage {
     public WebElement homePageSearchInputField;
     @FindBy(how = How.XPATH, using = "//button[contains(@class,'profile-button')]/span")
     public List<WebElement> logedInTextsList;
-
+    @FindBy(how = How.XPATH, using = " //button[text() = 'Log Out']")
+    public WebElement logOutButton;
 }

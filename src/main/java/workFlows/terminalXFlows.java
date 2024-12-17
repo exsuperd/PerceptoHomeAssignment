@@ -2,11 +2,9 @@ package workFlows;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
 import extensions.Verifications;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.testng.Assert;
+
 import utilities.CommonOperations;
 
 import java.io.File;
@@ -40,7 +38,8 @@ public class terminalXFlows extends CommonOperations {
         return credentialsList;
     }
 
-    public static void login(String username, String password, int expectedLoggedInComponents, String expectedLoggedInUserName) throws InterruptedException {
+    public static void login(String username, String password, int expectedLoggedInComponents, String[] randomUsernames)
+            throws InterruptedException {
         HomePage.homePageConnectButton.click();
         wait.until(ExpectedConditions.visibilityOf(LoginPage.emailInputField));
         LoginPage.emailInputField.click();
@@ -52,7 +51,7 @@ public class terminalXFlows extends CommonOperations {
         Thread.sleep(5000);
         visibilityOfAllElementsOfAList(HomePage.logedInTextsList);
         verifyListSize(HomePage.logedInTextsList, expectedLoggedInComponents);
-        compareStringValues(HomePage.logedInTextsList.get(1).getText(), expectedLoggedInUserName);
+        verifyTargetTextIsIncludedInTargetList(HomePage.logedInTextsList.get(1).getText(), randomUsernames);
     }
 
     public static void searchAndVerifyResults(String searchInputText, String expectedIncludedText) throws InterruptedException {
@@ -92,6 +91,19 @@ public class terminalXFlows extends CommonOperations {
         }
     }
 
+    public static void getAndVerifySelectedProductProperties(int selectedSearchResultIndex, String expectedPrice,
+                                                             String expectedPixelsFontSize, double expectedREMFontSIZE) {
+        SearchResultsPage.searchResultsTextsList.get(selectedSearchResultIndex).click();
+        wait.until(ExpectedConditions.visibilityOf(ProductPage.selectedProductPrice));
+        Verifications.compareStringValues(ProductPage.selectedProductPrice.getText(), expectedPrice);
+        getAndVerifyFontSizeInPixelsAndRem(ProductPage.selectedProductPrice, expectedPixelsFontSize,expectedREMFontSIZE);
+    }
 
-
+    public static void logOut() {
+        HomePage.logedInTextsList.get(1).click();
+        wait.until(ExpectedConditions.urlContains("account"));
+        HomePage.logOutButton.click();
+        wait.until(ExpectedConditions.visibilityOf(HomePage.homePageConnectButton));
+        Verifications.verifyListSize(HomePage.logedInTextsList, 0);
+    }
 }

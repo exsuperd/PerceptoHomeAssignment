@@ -1,5 +1,6 @@
 package extensions;
 
+import org.codehaus.groovy.transform.SourceURIASTTransformation;
 import org.jsoup.select.Elements;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -8,6 +9,7 @@ import utilities.CommonOperations;
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 public class Verifications extends CommonOperations {
@@ -82,6 +84,14 @@ public class Verifications extends CommonOperations {
         Assert.assertTrue(str.contains(expectedValue));
     }
 
+    public static void verifyTargetTextIsIncludedInTargetList(String str, String[] availableValues) {
+        List<String> targetList = new ArrayList<>();
+        for (int i = 0; i < availableValues.length; i++) {
+            targetList.add(i, availableValues[i]);
+        }
+        assertTrue(targetList.contains(str));
+    }
+
     public static void verifyATextIsNotIncludedInAString(String str, String expectedValue) {
         Assert.assertFalse(str.contains(expectedValue));
     }
@@ -104,5 +114,14 @@ public class Verifications extends CommonOperations {
         Assert.assertEquals(actualBooleanResult, expectedStatus);
     }
 
-
+    public static void getAndVerifyFontSizeInPixelsAndRem(WebElement elem, String expectedFontSizeInPixels, double expectedFontSizeInREM) {
+        String actualFontSizeInPixels = elem.getCssValue("font-size");
+        System.out.println("Element font size in pixels is: " + actualFontSizeInPixels);
+        double elementSize = Double.parseDouble(actualFontSizeInPixels.replace("px", ""));
+        double rootSize = Double.parseDouble(actualFontSizeInPixels.replace("px", ""));
+        double actualElementREMValue = elementSize / rootSize;
+        System.out.println("Element font size in rem is :" + actualElementREMValue);
+        assertEquals(expectedFontSizeInPixels, actualFontSizeInPixels);
+        assertEquals(expectedFontSizeInREM, actualElementREMValue);
+    }
 }

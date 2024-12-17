@@ -11,6 +11,7 @@ import pageObjects.LoginPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import pageObjects.ProductPage;
 import pageObjects.SearchResultsPage;
 
 public abstract class Base {
@@ -21,6 +22,7 @@ public abstract class Base {
     public static LoginPage LoginPage;
     public static HomePage HomePage;
     public static SearchResultsPage SearchResultsPage;
+    public static ProductPage ProductPage;
 
 
     public static RequestSpecification httpRequest;

@@ -17,5 +17,4 @@ public class UIActions extends CommonOperations {
         wait.until(ExpectedConditions.visibilityOf(elem));
         action.moveToElement(elem).build().perform();
     }
-
 }

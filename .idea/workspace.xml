@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="302f9d62-0018-4b26-9da7-b80393394bcf" name="Changes" comment="" />
+    <list default="true" id="302f9d62-0018-4b26-9da7-b80393394bcf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/ProductPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/extensions/UIActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/extensions/UIActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/extensions/Verifications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/extensions/Verifications.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/ManagePages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/ManagePages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/workFlows/terminalXFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workFlows/terminalXFlows.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/webTesting/perceptoSanityTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webTesting/perceptoSanityTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utilities/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utilities/Base.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,12 +37,12 @@
     &quot;assignee&quot;: &quot;exsuperd&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/exsuperd/GE.git&quot;,
-    &quot;accountId&quot;: &quot;a2a81951-ebdb-4437-a068-ccd23408dbfe&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/exsuperd/PerceptoHomeAssignment",
+    "accountId": "a2a81951-ebdb-4437-a068-ccd23408dbfe"
   }
-}</component>
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -44,7 +55,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
     <option name="showPreview" value="true" />
   </component>
   <component name="ProjectColorInfo">{
@@ -71,10 +82,12 @@
     "TestNG.Tests.test_01_loginUsingRandomUser.executor": "Run",
     "TestNG.Tests.test_02_searchItemAndVerifyResults.executor": "Run",
     "TestNG.Tests.test_03_verifyPricesNotSorted.executor": "Run",
+    "TestNG.perceptoSanityTests.executor": "Run",
+    "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "E:/AutomationPojects/GeneralElectric/src/main/java/workFlows/APIFlows",
-    "last_opened_file_path": "C:/Automation/Projects/TomaGradeAutomation",
+    "last_opened_file_path": "C:/Automation/Projects/perceptoHomeAssignment",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
@@ -96,7 +109,7 @@
       <recent name="workFlows.APIFlows" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.perceptoSanityTests">
     <configuration name="Compile" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />

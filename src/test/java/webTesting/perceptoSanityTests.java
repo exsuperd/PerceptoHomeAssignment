@@ -13,6 +13,9 @@ import java.util.List;
 import java.util.Map;
 
 import static utilities.UsefulMethods.getData;
+import static utilities.UsefulMethods.getRandomNumber;
+import static workFlows.terminalXFlows.getAndVerifySelectedProductProperties;
+import static workFlows.terminalXFlows.logOut;
 
 
 public class perceptoSanityTests extends CommonOperations {
@@ -21,8 +24,11 @@ public class perceptoSanityTests extends CommonOperations {
     final String browser = "chrome";
     final static String searchedItemText = "hello";
     final static String expectedCommonText = "Hello Kitty";
-    final static String expectedLoggedInUser ="per"; //Only added one user as the one of the credentials stopped working
+    final static String[] expectedAvailableUserNames = {"per", "checker"};
     final static boolean arePricesSorted = false;
+    final static String expectedPrice = "338.00 ₪";
+    final static String expectedPixelsFontSize = "21.6px";
+    final static double expectedREMFontSize = 1.0;
 
     @BeforeClass
     public void startWebSession() {
@@ -33,15 +39,13 @@ public class perceptoSanityTests extends CommonOperations {
 
     @Test(description = "test_01:loginUsingRandomUser")
     public static void test_01_loginUsingRandomUser() throws InterruptedException {
-        // int selectedUserIndex = getRandomNumber(0,1);
-        int selectedUserIndex = 1;
-        //For some reason the first credentials stopped working (getting an error) so I entered the second user hardcoded
+        int selectedUserIndex = getRandomNumber(0,1);
         System.out.println("Selected user index is " + selectedUserIndex);
         List<Map<String, String>> allCredentials = terminalXFlows.getCredentials();
         Map<String, String> selectedUser = allCredentials.get(selectedUserIndex);
         String selectedUsername = selectedUser.get("username");
         String selectedUserPassword = selectedUser.get("password");
-        terminalXFlows.login(selectedUsername,selectedUserPassword,2,expectedLoggedInUser);
+        terminalXFlows.login(selectedUsername ,selectedUserPassword,2,expectedAvailableUserNames);
     }
 
     @Test(description = "test_02:searchAndVerifyResults")
@@ -57,9 +61,14 @@ public class perceptoSanityTests extends CommonOperations {
         Verifications.booleanElementVerification(sorted,arePricesSorted);
     }
 
-    @AfterClass
-    public void closeSession() {
-        driver.quit();
+    @Test(description = "test_04:checkThirdProduct")
+    public static void test_04_verifyThirdProductProperties()  {
+     getAndVerifySelectedProductProperties(2, expectedPrice,expectedPixelsFontSize, expectedREMFontSize);
     }
 
+    @AfterClass
+    public void closeSession() {
+        //logOut();
+        driver.quit();
+    }
 }
