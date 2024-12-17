@@ -17,20 +17,21 @@ public class listeners extends CommonOperations implements ITestListener {
         // TODO Auto-generated method stub
     }
 
-    public void onTestFailure( ITestResult result) {
+    public void onTestFailure(ITestResult result) {
         System.out.println("---Test: " + result.getName() + " failed---");
-       // saveScreenshot();
+        // saveScreenshot();
 
     }
-    public void onTestSkipped( ITestResult test) {
+
+    public void onTestSkipped(ITestResult test) {
         System.out.println("---Test: " + test.getName() + " was skipped---");
     }
 
-    public void onTestStart( ITestResult test) {
+    public void onTestStart(ITestResult test) {
         System.out.println("---Test: " + test.getName() + " is starting---");
     }
 
-    public void onTestSuccess( ITestResult test) {
+    public void onTestSuccess(ITestResult test) {
         System.out.println("---Test: " + test.getName() + " passed---");
     }
 

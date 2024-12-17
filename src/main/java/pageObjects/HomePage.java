@@ -10,7 +10,7 @@ public class HomePage {
 
     @FindBy(how = How.CSS, using = "button[data-test-id='qa-header-login-button']")
     public WebElement homePageConnectButton;
-   @FindBy(how = How.CSS, using = "button[data-test-id='qa-header-search-button']")
+    @FindBy(how = How.CSS, using = "button[data-test-id='qa-header-search-button']")
     public WebElement homePageSearchButton;
     @FindBy(how = How.CSS, using = "input[data-test-id='qa-search-box-input']")
     public WebElement homePageSearchInputField;
@@ -18,4 +18,9 @@ public class HomePage {
     public List<WebElement> logedInTextsList;
     @FindBy(how = How.XPATH, using = " //button[text() = 'Log Out']")
     public WebElement logOutButton;
+    @FindBy(how = How.XPATH, using = "//div[contains(@class,'modal-container')]")
+    public List<WebElement> modalDialog; //FakeList
+    @FindBy(how = How.XPATH, using = " //div[contains(@class,'btn-refuse')]")
+    public WebElement refuseBenefitsButton;
+
 }

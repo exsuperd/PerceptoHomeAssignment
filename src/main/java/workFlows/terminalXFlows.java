@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import extensions.Verifications;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import pageObjects.HomePage;
 import utilities.CommonOperations;
 
 import java.io.File;
@@ -99,11 +100,12 @@ public class terminalXFlows extends CommonOperations {
         getAndVerifyFontSizeInPixelsAndRem(ProductPage.selectedProductPrice, expectedPixelsFontSize,expectedREMFontSIZE);
     }
 
-    public static void logOut() {
+    public static void logOut(String url, String expectedLoginButtonText) {
+        driver.navigate().to(url);
         HomePage.logedInTextsList.get(1).click();
         wait.until(ExpectedConditions.urlContains("account"));
         HomePage.logOutButton.click();
         wait.until(ExpectedConditions.visibilityOf(HomePage.homePageConnectButton));
-        Verifications.verifyListSize(HomePage.logedInTextsList, 0);
+        compareStringValues(HomePage.homePageConnectButton.getText(), expectedLoginButtonText);
     }
 }

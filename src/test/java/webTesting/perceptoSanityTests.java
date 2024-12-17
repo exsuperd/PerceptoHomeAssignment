@@ -29,6 +29,7 @@ public class perceptoSanityTests extends CommonOperations {
     final static String expectedPrice = "338.00 ₪";
     final static String expectedPixelsFontSize = "21.6px";
     final static double expectedREMFontSize = 1.0;
+    final static String expectedLoginButtonText = "התחברות";
 
     @BeforeClass
     public void startWebSession() {
@@ -39,18 +40,18 @@ public class perceptoSanityTests extends CommonOperations {
 
     @Test(description = "test_01:loginUsingRandomUser")
     public static void test_01_loginUsingRandomUser() throws InterruptedException {
-        int selectedUserIndex = getRandomNumber(0,1);
+        int selectedUserIndex = getRandomNumber(0, 1);
         System.out.println("Selected user index is " + selectedUserIndex);
         List<Map<String, String>> allCredentials = terminalXFlows.getCredentials();
         Map<String, String> selectedUser = allCredentials.get(selectedUserIndex);
         String selectedUsername = selectedUser.get("username");
         String selectedUserPassword = selectedUser.get("password");
-        terminalXFlows.login(selectedUsername ,selectedUserPassword,2,expectedAvailableUserNames);
+        terminalXFlows.login(selectedUsername, selectedUserPassword, 2, expectedAvailableUserNames);
     }
 
     @Test(description = "test_02:searchAndVerifyResults")
     public static void test_02_searchItemAndVerifyResults() throws InterruptedException {
-       terminalXFlows.searchAndVerifyResults(searchedItemText, expectedCommonText);
+        terminalXFlows.searchAndVerifyResults(searchedItemText, expectedCommonText);
     }
 
     @Test(description = "test_03:checkIfPricesAreSortedOrNot")
@@ -58,17 +59,17 @@ public class perceptoSanityTests extends CommonOperations {
         List<String> extracted = terminalXFlows.getAndReturnPricesList();
         boolean sorted = terminalXFlows.isSortedAscending(extracted);
         System.out.println(sorted);
-        Verifications.booleanElementVerification(sorted,arePricesSorted);
+        Verifications.booleanElementVerification(sorted, arePricesSorted);
     }
 
     @Test(description = "test_04:checkThirdProduct")
-    public static void test_04_verifyThirdProductProperties()  {
-     getAndVerifySelectedProductProperties(2, expectedPrice,expectedPixelsFontSize, expectedREMFontSize);
+    public static void test_04_verifyThirdProductProperties() {
+        getAndVerifySelectedProductProperties(2, expectedPrice, expectedPixelsFontSize, expectedREMFontSize);
     }
 
     @AfterClass
     public void closeSession() {
-        //logOut();
+        logOut(url, expectedLoginButtonText);
         driver.quit();
     }
 }
